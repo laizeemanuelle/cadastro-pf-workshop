@@ -1,0 +1,39 @@
+var
+
+//Declaração de variaveis
+
+nome , n_rg, n_cpf: caracter
+idade: inteiro
+
+Inicio
+
+//Criação do Cadastro do funcionario
+
+repetir cadastro <- S
+
+
+escreval ( " Informe o nome do funcionario: " )
+leia (nome)
+escreval( " Informe o numero do RG: " )
+leia (n_rg)
+escreval ("Informe o numero do CPF: ")
+leia (n_cpf)
+escreval ("Informe a idade: " )
+leia (idade)
+Se (idade < 16)faca
+escreval (" Fora da idade para trabalhar")
+fimse
+Se (idade <=16) e (idade>=18) faca
+Escreval ( "Funcionario Jovem Aprendiz" )
+fimse
+Se (idade >18) faca
+escreval ("Funcionario pode ser contratado como CLT ou PJ")
+
+
+//Consulta do funcionario
+escreva("Nome:", nome, "Numero do RG:", n_rg, " Numero do CPF ", n_cpf, "Sua idade é:", idade)
+escreval("Deseja cadastrar um novo funcionario: s/n")
+leia (repetir cadastro)
+
+
+fimalgoritmo
